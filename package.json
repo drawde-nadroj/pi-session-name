@@ -1,0 +1,17 @@
+{
+  "name": "pi-session-name",
+  "version": "1.0.0",
+  "description": "Automatic Pi session titles with optional TUIOS synchronization",
+  "type": "module",
+  "keywords": ["pi-package", "pi", "session-name"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drawde-nadroj/pi-session-name.git"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": { "node": ">=22.18.0" },
+  "peerDependencies": { "@earendil-works/pi-coding-agent": "*" },
+  "pi": { "extensions": ["./extensions/tuios-session-name.ts"] }
+}
